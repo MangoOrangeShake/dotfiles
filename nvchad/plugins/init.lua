@@ -77,8 +77,8 @@ return {
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = {
       ensure_installed = {
-        "cpp",
         "c",
+        "cpp",
         "javascript",
         "json",
         "html",
@@ -87,6 +87,9 @@ return {
         "typescript",
         "rust",
       },
+      indent = {
+        enable = false,
+      }
     },
   },
 }

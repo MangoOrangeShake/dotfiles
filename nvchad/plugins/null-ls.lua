@@ -16,7 +16,9 @@ local sources = {
    b.formatting.stylua,
 
    -- C++ / LLVM / Clang
-   b.formatting.clang_format,
+   b.formatting.clang_format.with {
+    filetypes = { "cpp", "c" },
+  },
 }
 
 null_ls.setup {
